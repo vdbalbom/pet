@@ -1,2 +1,2 @@
 # pet
-Project in purpose of increase skills in good practices in programming.
+Project in purpose of increase my skills in good practices in programming.
