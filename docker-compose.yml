@@ -1,0 +1,13 @@
+version: '2'
+services:
+  pet-run:
+    image: golang:1.9
+    command: bash -c "go install ./... && /go/bin/pet"
+    volumes:
+      - .:/go/src/github.com/pet
+  pet-test:
+    image: golang:1.9
+    command: bash -c "go test ./..."
+    volumes:
+      - .:/go/src/github.com/pet
+    working_dir: /go/src/github.com/pet
