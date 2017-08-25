@@ -11,10 +11,8 @@ Project in purpose of increase my skills in good practices in programming.
 
 ``` make run ```
 
-### To lint
+### To lint*
 ``` make lint ```
-
-<link> https://github.com/golang/lint </link>
 
 ## Not using Docker
 
@@ -30,8 +28,12 @@ Project in purpose of increase my skills in good practices in programming.
 
 ``` ${GOPATH}/bin/pet ```
 
-#### To install lint
+#### To install lint*
 ``` go get -u github.com/golang/lint/golint ```
 
-#### To lint (need to install lint first)
+#### To lint* (need to install lint first)
 ``` golint ./... ```
+
+## *Lint:
+
+source: <link> https://github.com/golang/lint </link>
