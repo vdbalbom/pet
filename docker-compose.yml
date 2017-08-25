@@ -11,3 +11,12 @@ services:
     volumes:
       - .:/go/src/github.com/pet
     working_dir: /go/src/github.com/pet
+  pet-lint:
+    image: golang:1.9
+    command: bash -c "go get -u github.com/golang/lint/golint &&
+                      tput setaf 2; echo 'running lint...'; tput setaf 3  &&
+                      golint ./... &&
+                      tput setaf 2; echo 'finished'; tput sgr0"
+    volumes:
+      - .:/go/src/github.com/pet
+    working_dir: /go/src/github.com/pet
