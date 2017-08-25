@@ -13,14 +13,14 @@ Project in purpose of increase my skills in good practices in programming.
 
 ## Not using Docker
 
-### To Test
+#### To Test
 
-``` make test-local ```
+``` go test ./... ```
 
-### To install
+#### To install pet
 
-``` make install-local ```
+``` go install ./... ```
 
-### To run (need to install first)
+#### To run (need to install pet first)
 
-``` make run-local ```
+``` ${GOPATH}/bin/pet ```
